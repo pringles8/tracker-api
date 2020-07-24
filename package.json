@@ -3,6 +3,17 @@
   "version": "1.0.0",
   "description": "Pro MERN Stack (2nd Edition) API",
   "main": "index.js",
+  "engines": {
+    "node": "10.x",
+    "npm": "6.x"
+  },
+  "scripts": {
+    "start": "nodemon -e js,graphql -w . -w .env server.js",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^2.16.0",
     "body-parser": "^1.18.3",
@@ -20,16 +31,5 @@
     "eslint": "^5.12.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0"
-  },
-  "engines": {
-    "node": "10.x",
-    "npm": "6.x",
-  },
-  "scripts": {
-    "start": "nodemon -e js,graphql -w . -w .env server.js",
-    "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  }
 }
